@@ -5,3 +5,17 @@ const array = [
     [20, 33, 11, 12, 19],
     [3, 3, 4, 5, 10]
 ]
+
+/*if(array.length === 5){
+    for(let i=0; i<array.length;i++){ 
+        console.log(`Jogador ${i+1}: ${array[i]}`)
+    }
+}*/
+
+for(let i in array){
+    let temporada = `Temporada ${Number(i)+1}:`
+    for (let j of array[i]){
+        temporada += j +", "
+    }
+    console.log(temporada)
+}
